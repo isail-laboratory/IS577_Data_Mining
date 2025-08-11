@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS 577: Data Mining - Fall 2025</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the sticky navigation bar */
+        .sticky-nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h1 class="text-3xl font-bold text-gray-900">IS 577: Data Mining</h1>
+            <p class="mt-1 text-lg text-gray-600">Fall 2025</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="sticky-nav bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-6 md:space-x-8 h-16">
+                <a href="#info" class="flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">General Info</a>
+                <a href="#schedule" class="flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Schedule</a>
+                <a href="#assignments" class="flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Assignments</a>
+                <a href="#resources" class="flex items-center text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+
+        <!-- General Information Section -->
+        <section id="info" class="mb-12 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">General Information</h2>
+            <div class="space-y-4">
+                <!-- Use a grid for better layout on larger screens -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">Instructor:</div>
+                    <a href="https://ischool.illinois.edu/people/jingrui-he" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Professor Jingrui He</a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">TA:</div>
+                    <div class="md:col-span-2">Mengting Ai (mai10@illinois.edu)</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">Lectures:</div>
+                    <div class="md:col-span-2">Fridays, 01:00PM - 03:50PM, Room 126, Grad Sch of Lib & Info Science</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">Professor's Office Hours:</div>
+                    <div class="md:col-span-2">By appointment, please contact professor</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">TA's Office Hours:</div>
+                    <div class="md:col-span-2">Time TBD, Room 5165, 614 E Daniel St</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div class="font-semibold text-gray-700">Course Description:</div>
+                    <div class="md:col-span-2">
+                        <p>Data mining refers to the process of exploring large datasets with the goal of uncovering interesting patterns. This process usually involves a number of tasks such as data collection, pre-processing, & characterization; model fitting, selection, & evaluation; classification, clustering, & prediction. Although data mining has its roots in database management, it has grown into a discipline that focuses on algorithm design (to ensure computational feasibility) & statistical modeling (to separate the signal from the noise). It draws heavily upon a variety of other disciplines including statistics, machine learning, operations research, & information retrieval. Will cover the major data mining concepts, principles, & techniques that every information scientist should know about. Lectures will introduce & discuss the major approaches to data mining; computer lab sessions coupled w/assignments will provide hands-on experience with these approaches; term projects offer the opportunity to use data mining in a novel way. Mathematical detail will be left to the students who are so inclined.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="mb-12 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Schedule</h2>
+            <p class="text-gray-600 mb-6">Note: This schedule is tentative and subject to change.</p>
+            <div class="overflow-x-auto bg-white rounded-lg shadow">
+                <table class="w-full text-sm text-left text-gray-600">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 w-1/12">Week</th>
+                            <th scope="col" class="px-6 py-3 w-2/12">Date</th>
+                            <th scope="col" class="px-6 py-3 w-6/12">Topic</th>
+                            <th scope="col" class="px-6 py-3 w-3/12">Slides/Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- EDIT BELOW: Add a new <tr> block for each week -->
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 font-medium">1</td>
+                            <td class="px-6 py-4">Aug 26</td>
+                            <td class="px-6 py-4">Introduction to Data Mining & Course Overview</td>
+                            <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">[Slides]</a></td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b">
+                            <td class="px-6 py-4 font-medium">2</td>
+                            <td class="px-6 py-4">Sep 2</td>
+                            <td class="px-6 py-4">Data Preprocessing: Cleaning, Transformation, Reduction</td>
+                            <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">[Slides]</a></td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 font-medium">3</td>
+                            <td class="px-6 py-4">Sep 9</td>
+                            <td class="px-6 py-4">Classification: Decision Trees and Model Evaluation</td>
+                            <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">[Slides]</a></td>
+                        </tr>
+                        <tr class="bg-gray-50 border-b">
+                          <td class="px-6 py-4 font-medium">4</td>
+                          <td class="px-6 py-4">Sep 16</td>
+                          <td class="px-6 py-4">Classification: Naive Bayes and Logistic Regression</td>
+                          <td class="px-6 py-4"><a href="#" class="font-medium text-blue-600 hover:underline">[Slides]</a></td>
+                        </tr>
+                        <!-- Add more weeks here as the semester progresses -->
+                        <tr class="bg-white border-b">
+                            <td class="px-6 py-4 font-medium text-gray-400">...</td>
+                            <td class="px-6 py-4 text-gray-400">...</td>
+                            <td class="px-6 py-4 text-gray-400">...</td>
+                            <td class="px-6 py-4 text-gray-400">...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section id="assignments" class="mb-12 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Assignments</h2>
+            <div class="space-y-4">
+                <!-- EDIT BELOW: Add a new <div> block for each assignment -->
+                <div class="p-4 bg-white rounded-lg border border-gray-200">
+                    <h3 class="font-semibold text-gray-800">Homework 1: Data Exploration and Preprocessing</h3>
+                    <p class="text-sm text-gray-600 mt-1"><strong>Due:</strong> Sep 12, 2025 at 11:59 PM</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-sm font-medium text-blue-600 hover:underline">[Instructions]</a>
+                        <a href="#" class="ml-4 text-sm font-medium text-blue-600 hover:underline">[Starter Code]</a>
+                    </div>
+                </div>
+                <div class="p-4 bg-white rounded-lg border border-gray-200">
+                    <h3 class="font-semibold text-gray-800">Homework 2: Classification</h3>
+                    <p class="text-sm text-gray-600 mt-1"><strong>Due:</strong> Sep 26, 2025 at 11:59 PM</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-sm font-medium text-gray-400 cursor-not-allowed">[Instructions (Coming Soon)]</a>
+                    </div>
+                </div>
+                <!-- Add more assignments here -->
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Resources</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <!-- EDIT BELOW: Add more resources as needed -->
+                <li><a href="https://pandas.pydata.org/docs/" target="_blank" class="text-blue-600 hover:underline">Pandas Documentation</a> - For data manipulation in Python.</li>
+                <li><a href="https://scikit-learn.org/stable/documentation.html" target="_blank" class="text-blue-600 hover:underline">Scikit-learn Documentation</a> - The primary machine learning library we will use.</li>
+                <li><a href="https://www.w3schools.com/python/numpy/default.asp" target="_blank" class="text-blue-600 hover:underline">NumPy Tutorial</a> - Essential for numerical computing.</li>
+                <!-- <li>Textbook: Jiawei Han, Micheline Kamber, and Jian Pei, "Data Mining: Concepts and Techniques".</li> -->
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <p>School of Information Sciences</p>
+            <p>University of Illinois Urbana-Champaign</p>
+        </div>
+    </footer>
+
+</body>
+</html>
